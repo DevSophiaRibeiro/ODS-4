@@ -10,23 +10,23 @@
   z-index: 1;
 }
 
- /* HEADER E NAV*/
+/* HEADER E NAV*/
 :root {
   --cor-principal: #c31f1f;
   --cor-secundaria-texto: #333a45;
   --cor-fundo: #f8efef;
 }
 
- header {
+header {
   background-color: var(--cor-principal);
   position: fixed;
   z-index: 1000;
   width: 100%;
   height: 80px;
   box-shadow: 0px 2px 31px -4px #000000;
- }
+}
 
- nav {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -36,35 +36,35 @@
   height: 100%;
 }
 
- /* LOGO, TITULOS E MENU*/
+/* LOGO, TITULOS E MENU*/
 
- .logo img {
+.logo img {
   padding: 2px;
   width: 40px;
   background: white;
   border-radius: 100px;
- }
+}
 
- /*TITULO*/
+/*TITULO*/
 
- .titles {
+.titles {
   display: flex;
   flex-direction: column;
- }
+}
 
- .titles h1 {
+.titles h1 {
   font-size: 1.8rem;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
- }
+}
 
- .titles h3 {
+.titles h3 {
   font-size: 0.8rem;
   color: whitesmoke;
   font-family: sans-serif;
   font-weight: 100;
 
- }
+}
 
 /*MENU*/
 
@@ -104,9 +104,8 @@ main {
 }
 
 .text-1 {
-  padding-top: 50px;
- border: 1px solid red;
- text-align: center;
+  padding-top: 80px;
+  text-align: center;
 }
 
 .text-1 h1 {
@@ -125,15 +124,158 @@ main {
   margin-bottom: 60px;
 }
 
-/* SECTION TEXTOS E IMG*/
+/* SECTION TEXTOS E IMG */
+.objetivo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 120px;
+  gap: 60px;
+  background-color: #fff;
+}
 
+/* TEXTO */
 .missao {
-  width: 800px;
-  border: 1px solid green;
+  flex: 1;
+  max-width: 600px;
+}
+
+.missao h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0b0b0b;
+  margin-bottom: 20px;
+}
+
+.missao h3 {
+  color: #333a45;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.8rem;
+}
+
+/* IMAGEM */
+.sala {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sala img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* INFO CARDS*/
+
+section.valores h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0b0b0b;
+  margin-bottom: 50px;
 }
 
 
 
+/*ICONES E TEXTO*/
+
+.icon-box {
+  background-color: var(--cor-principal);
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  /* efeito suave */
+}
+
+
+.icon-box img {
+  padding: 10px;
+  width: 50px;
+}
+
+img.mundo {
+  width: 60px;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Quando passar o mouse no bloco inteiro */
+.stats-box:hover .icon-box {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.stats-box {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  /* Ícone em cima, texto embaixo */
+  align-items: center;
+  /* Centraliza tudo */
+}
+
+.titles1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.text {
+  color: var(--cor-secundaria-texto);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 40;
+  font-size: 1.05rem;
+  line-height: 1.6rem;
+}
+
+/* VISION PART */
+
+.vision {
+  text-align: center;
+  background: #FEECEC;
+  border-radius: 1.8rem;
+  width: 100%;
+  height: 280px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vision h3 {
+  width: 70%;
+  margin: 0 auto;
+  color: var(--cor-secundaria-texto);
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
 
 
 
