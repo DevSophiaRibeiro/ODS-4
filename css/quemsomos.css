@@ -267,6 +267,7 @@ img.mundo {
   justify-content: center;
 }
 
+
 .vision h3 {
   width: 70%;
   margin: 0 auto;
@@ -275,6 +276,10 @@ img.mundo {
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 1.8rem;
+}
+
+.vision h1 {
+  font-size: 2.2rem
 }
 
 /*INFO FOOTER e FOOTER*/
@@ -381,11 +386,13 @@ img.mundo {
 }
 
 @media (max-width: 768px) {
+
   /* Centralizar todos os textos */
   .missao h1,
   .titles,
   .titles h1,
-  .titles h3 {
+  .titles h3,
+  .missao h3 {
     text-align: center;
   }
 
@@ -396,8 +403,15 @@ img.mundo {
   .text-1 h3 {
     width: 100%;
     padding: 0 15px;
+
   }
 
+  .text-1 h1,
+  .missao h1,
+  section.valores h1,
+  .vision h1 {
+    font-size: 2rem;
+  }
 
   /* Ajusta o layout dos info-box para 2 por linha */
   .info-box {
@@ -524,12 +538,17 @@ img.mundo {
 
   .objetivo {
     flex-direction: column;
-    align-items: center; /* opcional: centraliza os filhos */
-    padding: 20px; /* opcional: dá espaço interno */
+    align-items: center;
+    /* opcional: centraliza os filhos */
+    padding: 20px;
+    /* opcional: dá espaço interno */
   }
 
   .sala img {
-    margin-bottom: 20px; /* espaço entre texto e imagem */
-    max-width: 90%;   /* ocupa boa parte da largura da tela */
+    margin-bottom: 20px;
+    /* espaço entre texto e imagem */
+    max-width: 90%;
+    /* ocupa boa parte da largura da tela */
   }
+
 }
