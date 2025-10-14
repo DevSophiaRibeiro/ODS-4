@@ -382,7 +382,7 @@ img.mundo {
 
 @media (max-width: 768px) {
   /* Centralizar todos os textos */
-
+  .missao h1,
   .titles,
   .titles h1,
   .titles h3 {
