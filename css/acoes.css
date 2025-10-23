@@ -102,22 +102,47 @@
    padding-top: 80px;
  }
 
-
-
- .projetos {
+ .main-text {
    text-align: center;
-   padding: 50px 20px;
-   max-width: 1200px;
-   margin: auto;
  }
 
- .projetos h2 {
+ .main-text h1 {
+   font-size: 3.5rem;
+   font-family: Arial, Helvetica, sans-serif;
+   color: black;
+   margin-bottom: 25px;
+   padding-top: 50px;
+ }
+
+
+ .main-text h3 {
+   color: var(--cor-secundaria-texto);
+   font-family: sans-serif;
    font-weight: 500;
-   color: #333;
-   margin-bottom: 40px;
-   line-height: 1.5;
+   font-size: 1.3rem;
+   width: 720px;
+   margin: 0 auto;
+   margin-bottom: 60px;
+   line-height: 30px;
  }
 
+ .number {
+   text-align: center;
+   font-size: 28px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   margin-bottom: 5px;
+ }
+
+ .text {
+   font-size: 20px;
+   color: var(--cor-secundaria-texto);
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 200;
+   margin-bottom: 80px;
+ }
+
+ /*SEÇÃO DE METRICAS E CARDS*/
  .metricas {
    display: flex;
    justify-content: center;
@@ -136,87 +161,163 @@
    color: #555;
  }
 
- .cards {
-   display: flex;
-   flex-wrap: wrap;
+ /* cards*/
+
+ /* === CONTAINER DE PROJETOS === */
+ .projetos {
+   margin-bottom: 60px;
+ }
+
+ .cards-projetos {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
    gap: 30px;
-   justify-content: center;
  }
 
- .card {
+ /* === CARD === */
+ .card-projeto {
    background: #fff;
-   border-radius: 10px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   width: 320px;
-   padding-bottom: 20px;
+   border-radius: 15px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+   overflow: hidden;
+   transition: all 0.3s ease;
+ }
+
+ .card-projeto:hover {
+   transform: translateY(-6px);
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+ }
+
+ /* === IMAGEM === */
+ .imagem-card {
    position: relative;
-   text-align: left;
-   transition: transform 0.3s ease;
+   height: 220px;
+   overflow: hidden;
  }
 
- .card:hover {
-   transform: translateY(-5px);
- }
-
- .card img {
+ .imagem-card img {
    width: 100%;
-   border-radius: 10px 10px 0 0;
+   height: 100%;
+   object-fit: cover;
  }
 
- .card h4 {
-   margin: 15px;
-   font-size: 1.1rem;
-   font-weight: 600;
- }
-
- .card p {
-   margin: 0 15px;
-   color: #555;
-   font-size: 0.9rem;
- }
-
+ /* === TAGS === */
  .tag {
    position: absolute;
-   top: 10px;
-   left: 10px;
-   background: #e0e7ff;
-   color: #1d4ed8;
-   padding: 4px 10px;
-   border-radius: 8px;
-   font-size: 0.75rem;
- }
-
- .status {
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   background: #d1fae5;
-   color: #065f46;
-   padding: 4px 10px;
-   border-radius: 8px;
-   font-size: 0.75rem;
+   top: 15px;
+   padding: 5px 12px;
+   font-size: 0.8rem;
+   font-weight: 100;
+   border-radius: 20px;
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
  }
 
  .tag.azul {
-   background: #dbeafe;
-   color: #1e40af;
+   background-color: #4169e1;
+   left: 15px;
  }
 
  .tag.verde {
-   background: #dcfce7;
-   color: #166534;
+   background-color: #28a745;
+   right: 15px;
+ }
+
+ .tag.roxa {
+   background-color: #6f42c1;
+   left: 15px;
  }
 
  .tag.laranja {
-   background: #fef3c7;
-   color: #92400e;
+   background-color: #ff914d;
+   left: 15px;
  }
 
- .status.ativo {
-   background: #dcfce7;
-   color: #065f46;
+  .tag.amarela {
+    background-color: #ffc107;
+    right: 15px;
+  }
+
+  .tag.rosa {
+    background-color: #e83e8c;
+    left: 15px;
+  }
+
+  .tag.verde-escuro {
+    background-color: #155724;
+    left: 15px;
+  }
+
+ /* === CONTEÚDO === */
+ .conteudo-card {
+   padding: 25px 30px;
  }
 
+ .titulo-card {
+   font-size: 1.3rem;
+   margin-bottom: 10px;
+ }
+
+ .titulo-card.vermelho,
+ .titulo-card.azul-escuro,
+ .titulo-card.verde-escuro {
+   color: #000000;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .conteudo-card p {
+   color: var(--cor-secundaria-texto);
+   font-size: 1rem;
+   line-height: 1.6rem;
+   margin-bottom: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* === INFORMAÇÕES === */
+ .info-card {
+   list-style: none;
+   padding: 0;
+   margin-top: 35px;
+   margin-bottom: 10px;
+ }
+
+ .info-card li {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   margin-bottom: 8px;
+   font-size: 0.95rem;
+   color: var(--cor-secundaria-texto);
+   font-family: open sans, sans-serif;
+ }
+
+ .info-card i {
+   color: #b21e1e;
+ }
+
+ .card-projeto {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background: #fff;
+   border-radius: 12px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   width: 350px;
+ }
+
+ .info-card {
+   list-style: none;
+   padding: 0;
+   margin: 0 0 1rem 0;
+ }
+
+ .info-card li {
+   display: flex;
+   align-items: center;
+   font-size: 0.95rem;
+   margin-bottom: 0.4rem;
+ }
 
  /*INFO FOOTER e FOOTER*/
 
@@ -317,175 +418,151 @@
    color: white;
  }
 
-  /* ============================
+ /* ============================
    RESPONSIVIDADE - CELULAR
    ============================ */
 
-  /* --- Tablets: dois modais por linha --- */
-  @media (max-width: 1024px) {
-    .cards {
-      grid-template-columns: repeat(2, 1fr);
+ /* --- Tablets: dois modais por linha --- */
+ @media (max-width: 1024px) {
+   .cards {
+     grid-template-columns: repeat(2, 1fr);
+   }
+ }
+
+ @media (max-width: 768px) {
+   .main-text h1 {
+     margin-top: 50px;
+   }
+
+   .titles h1,
+   .titles h3{
+   text-align: center;
+ }
+
+ .titles h1 {
+      font-size: 1.5rem;
     }
-  }
 
-  @media (max-width: 768px) {
-  /* Centralizar todos os textos */
-  .posts h3,
-  .posts p,
-  .card-content,
-  .titles,
-  .titles h1,
-  .titles h3,
-  .modal-content h2,
-  .modal-content p,
-  .modal-content small {
-    text-align: center;
-  }
+ /* Textos que estavam com largura fixa */
+ .main-text h3 {
+   width: 100%;
+   padding: 0 15px;
+ }
 
-  .titles h1 {
-    font-size: 1.5rem;
-  }
 
-  /* Textos que estavam com largura fixa */
-  .main-text h3 {
-    width: 100%;
-    padding: 0 15px;
-  }
+ /* Garante que os textos e ícones fiquem centralizados */
+ .number,
+ .text {
+   text-align: center;
+ }
 
-  /* Ajusta o layout dos info-box para 2 por linha */
-  .info-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-  }
+ /* Menu responsivo (pode ajustar como necessário) */
+ header {
+   height: auto;
+ }
 
-  /* Garante que os textos e ícones fiquem centralizados */
-  .stats-box .number,
-  .stats-box .text {
-    text-align: center;
-  }
+ .menu a {
+   font-size: 1rem;
+ }
 
-  /* Modal: 1 por linha */
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+ /* Títulos menores */
+ .main-text h1 {
+   font-size: 2rem;
+ }
 
-  .card {
-    width: 90%;
-    max-width: 100%;
-  }
+ .cards-projetos {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
 
-  /* Menu responsivo (pode ajustar como necessário) */
-  header {
-    height: auto;
-  }
-  
-  .menu a {
-    font-size: 1rem;
-  }
 
-  /* Títulos menores */
-  .main-text h1 {
-    font-size: 2rem;
-  }
 
-  .posts h3 {
-    font-size: 1.6rem;
-  }
+ /* Footer responsivo */
 
-  .card-content h3 {
-    font-size: 1rem;
-  }
+ .footer-logo,
+ .footer-col,
+ .footer-col p,
+ .footer-col h4 {
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+ }
 
-  .modal-content {
-    width: 90%;
-    padding: 20px;
-  }
+ .container-footer {
+   flex-direction: column;
+   align-items: center;
+ }
 
-  .modal-content img {
-    width: 100%;
-  }
+ .footer-col ul {
+   padding-left: 0;
+ }
 
-  .footer-logo,
-  .footer-col,
-  .footer-col p,
-  .footer-col h4 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+ ul.menu {
+   display: none;
+   flex-direction: column;
+   width: 100%;
+   background-color: var(--cor-principal);
+   padding: 10px 0;
+ }
 
-  .container-footer {
-    flex-direction: column;
-    align-items: center;
-  }
+ ul.menu.active {
+   display: flex;
+ }
 
-  .footer-col ul {
-    padding-left: 0;
-  }
+ .menu-toggle {
+   display: block;
+   font-size: 28px;
+   background: none;
+   border: none;
+   color: white;
+   margin-left: auto;
+   cursor: pointer;
+ }
 
-    ul.menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--cor-principal);
-    padding: 10px 0;
-  }
+ nav {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   gap: 10px;
+   padding: 10px;
+ }
 
-  ul.menu.active {
-    display: flex;
-  }
+ .logo img {
+   width: 50px;
+   margin-bottom: 5px;
+ }
 
-  .menu-toggle {
-    display: block;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: white;
-    margin-left: auto;
-    cursor: pointer;
-  }
+ /* Botão do menu hambúrguer */
+ .menu-toggle {
+   display: block;
+   position: absolute;
+   top: 10px;
+   right: 1px;
+   font-size: 28px;
+   background: none;
+   border: none;
+   color: white;
+   z-index: 999;
+ }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    gap: 10px;
-    padding: 10px;
-  }
+ .menu a {
+   display: block;
+   /* Faz o <a> ocupar toda a largura */
+   width: 100%;
+   /* Garante que o clique pegue tudo */
+   padding: 15px 20px;
+   /* Mais espaço para clique */
+ }
 
-  .logo img {
-    width: 50px;
-    margin-bottom: 5px;
-  }
+ .menu a:hover {
+   font-size: 1.1rem;
+ }
 
-  /* Botão do menu hambúrguer */
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 1px;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: white;
-    z-index: 999;
-  }
-
-  .menu a {
-    display: block;      /* Faz o <a> ocupar toda a largura */
-    width: 100%;         /* Garante que o clique pegue tudo */
-    padding: 15px 20px;  /* Mais espaço para clique */
-  }
-
-  .menu a:hover {
-    font-size: 1.1rem;
-  }
-
-  .menu li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* visual separador */
-  }
-}
+ .menu li {
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+   /* visual separador */
+ }
+ }

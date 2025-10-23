@@ -535,163 +535,168 @@
   }
 
   @media (max-width: 768px) {
-  /* Centralizar todos os textos */
-  .posts h3,
-  .posts p,
-  .card-content,
-  .titles,
-  .titles h1,
-  .titles h3,
-  .modal-content h2,
-  .modal-content p,
-  .modal-content small {
-    text-align: center;
-  }
 
-  .titles h1 {
-    font-size: 1.5rem;
-  }
+    /* Centralizar todos os textos */
+    .posts h3,
+    .posts p,
+    .card-content,
+    .titles,
+    .titles h1,
+    .titles h3,
+    .modal-content h2,
+    .modal-content p,
+    .modal-content small {
+      text-align: center;
+    }
 
-  /* Textos que estavam com largura fixa */
-  .main-text h3 {
-    width: 100%;
-    padding: 0 15px;
-  }
+    .titles h1 {
+      font-size: 1.5rem;
+    }
 
-  /* Ajusta o layout dos info-box para 2 por linha */
-  .info-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-  }
+    /* Textos que estavam com largura fixa */
+    .main-text h3 {
+      width: 100%;
+      padding: 0 15px;
+    }
 
-  /* Garante que os textos e ícones fiquem centralizados */
-  .stats-box .number,
-  .stats-box .text {
-    text-align: center;
-  }
+    /* Ajusta o layout dos info-box para 2 por linha */
+    .info-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
 
-  /* Modal: 1 por linha */
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+    /* Garante que os textos e ícones fiquem centralizados */
+    .stats-box .number,
+    .stats-box .text {
+      text-align: center;
+    }
 
-  .card {
-    width: 90%;
-    max-width: 100%;
-  }
+    /* Modal: 1 por linha */
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  /* Menu responsivo (pode ajustar como necessário) */
-  header {
-    height: auto;
-  }
-  
-  .menu a {
-    font-size: 1rem;
-  }
+    .card {
+      width: 90%;
+      max-width: 100%;
+    }
 
-  /* Títulos menores */
-  .main-text h1 {
-    font-size: 2rem;
-  }
+    /* Menu responsivo (pode ajustar como necessário) */
+    header {
+      height: auto;
+    }
 
-  .posts h3 {
-    font-size: 1.6rem;
-  }
+    .menu a {
+      font-size: 1rem;
+    }
 
-  .card-content h3 {
-    font-size: 1rem;
-  }
+    /* Títulos menores */
+    .main-text h1 {
+      font-size: 2rem;
+    }
 
-  .modal-content {
-    width: 90%;
-    padding: 20px;
-  }
+    .posts h3 {
+      font-size: 1.6rem;
+    }
 
-  .modal-content img {
-    width: 100%;
-  }
+    .card-content h3 {
+      font-size: 1rem;
+    }
 
-  .footer-logo,
-  .footer-col,
-  .footer-col p,
-  .footer-col h4 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
+    .modal-content {
+      width: 90%;
+      padding: 20px;
+    }
 
-  .container-footer {
-    flex-direction: column;
-    align-items: center;
-  }
+    .modal-content img {
+      width: 100%;
+    }
 
-  .footer-col ul {
-    padding-left: 0;
-  }
+    .footer-logo,
+    .footer-col,
+    .footer-col p,
+    .footer-col h4 {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container-footer {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-col ul {
+      padding-left: 0;
+    }
 
     ul.menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--cor-principal);
-    padding: 10px 0;
-  }
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--cor-principal);
+      padding: 10px 0;
+    }
 
-  ul.menu.active {
-    display: flex;
-  }
+    ul.menu.active {
+      display: flex;
+    }
 
-  .menu-toggle {
-    display: block;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: white;
-    margin-left: auto;
-    cursor: pointer;
-  }
+    .menu-toggle {
+      display: block;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      margin-left: auto;
+      cursor: pointer;
+    }
 
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    gap: 10px;
-    padding: 10px;
-  }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      gap: 10px;
+      padding: 10px;
+    }
 
-  .logo img {
-    width: 50px;
-    margin-bottom: 5px;
-  }
+    .logo img {
+      width: 50px;
+      margin-bottom: 5px;
+    }
 
-  /* Botão do menu hambúrguer */
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 1px;
-    font-size: 28px;
-    background: none;
-    border: none;
-    color: white;
-    z-index: 999;
-  }
+    /* Botão do menu hambúrguer */
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 1px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      z-index: 999;
+    }
 
-  .menu a {
-    display: block;      /* Faz o <a> ocupar toda a largura */
-    width: 100%;         /* Garante que o clique pegue tudo */
-    padding: 15px 20px;  /* Mais espaço para clique */
-  }
+    .menu a {
+      display: block;
+      /* Faz o <a> ocupar toda a largura */
+      width: 100%;
+      /* Garante que o clique pegue tudo */
+      padding: 15px 20px;
+      /* Mais espaço para clique */
+    }
 
-  .menu a:hover {
-    font-size: 1.1rem;
-  }
+    .menu a:hover {
+      font-size: 1.1rem;
+    }
 
-  .menu li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* visual separador */
+    .menu li {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      /* visual separador */
+    }
   }
-}
