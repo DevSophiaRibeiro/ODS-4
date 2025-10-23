@@ -438,3 +438,229 @@ main {
     border: none;
     color: white;
 }
+
+
+ /* ============================
+   RESPONSIVIDADE - TABLET E CELULAR
+   ============================ */
+
+   /* --- Tablets: dois modais por linha --- */
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Centralizar todos os textos */
+  .missao h1,
+  .titles,
+  .titles h1,
+  .titles h3,
+  .missao h3 {
+    text-align: center;
+  }
+
+  .titles h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-1 h3 {
+    width: 100%;
+    padding: 0 15px;
+
+  }
+
+  .text-1 h1,
+  .missao h1,
+  section.valores h1,
+  .vision h1 {
+    font-size: 2rem;
+  }
+
+  /* Ajusta o layout dos info-box para 2 por linha */
+  .info-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  /* Garante que os textos e ícones fiquem centralizados */
+  .stats-box .number,
+  .stats-box .text {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  /* Menu responsivo (pode ajustar como necessário) */
+  header {
+    height: auto;
+  }
+
+  .menu a {
+    font-size: 1rem;
+  }
+
+  .footer-logo,
+  .footer-col,
+  .footer-col p,
+  .footer-col h4 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col ul {
+    padding-left: 0;
+  }
+
+  ul.menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--cor-principal);
+    padding: 10px 0;
+  }
+
+  ul.menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 50px;
+    margin-bottom: 5px;
+  }
+
+  /* Botão do menu hambúrguer */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 1px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    z-index: 999;
+  }
+
+  .menu a {
+    display: block;
+    /* Faz o <a> ocupar toda a largura */
+    width: 100%;
+    /* Garante que o clique pegue tudo */
+    padding: 15px 20px;
+    /* Mais espaço para clique */
+  }
+
+  .menu a:hover {
+    font-size: 1.1rem;
+  }
+
+  .menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    /* visual separador */
+  }
+
+  .vision {
+    height: 100%;
+    padding: 15px;
+  }
+
+  .missao {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    /* espaçamento interno opcional */
+    box-sizing: border-box;
+    /* garante que o padding não estoure a largura */
+  }
+
+  .objetivo {
+    flex-direction: column;
+    align-items: center;
+    /* opcional: centraliza os filhos */
+    padding: 20px;
+    /* opcional: dá espaço interno */
+  }
+
+  .sala img {
+    margin-bottom: 20px;
+    /* espaço entre texto e imagem */
+    max-width: 90%;
+    /* ocupa boa parte da largura da tela */
+  }
+
+
+  /* Cards das metas (goal cards) */
+  .goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 80px;
+  }
+
+  .goal-card {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .goal-header span {
+    font-size: 1rem;
+  }
+
+  .goal-title {
+    font-size: 1.1rem;
+  }
+
+  .goal-text {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .progress-container h3 {
+    font-size: 1rem;
+  }
+
+  .progress-bar {
+    height: 10px;
+  }
+
+  .porcentagem {
+    font-size: 1rem;
+  }
+
+  .status {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+
+}
