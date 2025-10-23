@@ -172,6 +172,9 @@
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
    gap: 30px;
+   display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
  }
 
  /* === CARD === */
@@ -233,20 +236,20 @@
    left: 15px;
  }
 
-  .tag.amarela {
-    background-color: #ffc107;
-    right: 15px;
-  }
+ .tag.amarela {
+   background-color: #ffc107;
+   right: 15px;
+ }
 
-  .tag.rosa {
-    background-color: #e83e8c;
-    left: 15px;
-  }
+ .tag.rosa {
+   background-color: #e83e8c;
+   left: 15px;
+ }
 
-  .tag.verde-escuro {
-    background-color: #155724;
-    left: 15px;
-  }
+ .tag.verde-escuro {
+   background-color: #155724;
+   left: 15px;
+ }
 
  /* === CONTEÚDO === */
  .conteudo-card {
@@ -435,134 +438,134 @@
    }
 
    .titles h1,
-   .titles h3{
-   text-align: center;
- }
+   .titles h3 {
+     text-align: center;
+   }
 
- .titles h1 {
-      font-size: 1.5rem;
-    }
+   .titles h1 {
+     font-size: 1.5rem;
+   }
 
- /* Textos que estavam com largura fixa */
- .main-text h3 {
-   width: 100%;
-   padding: 0 15px;
- }
-
-
- /* Garante que os textos e ícones fiquem centralizados */
- .number,
- .text {
-   text-align: center;
- }
-
- /* Menu responsivo (pode ajustar como necessário) */
- header {
-   height: auto;
- }
-
- .menu a {
-   font-size: 1rem;
- }
-
- /* Títulos menores */
- .main-text h1 {
-   font-size: 2rem;
- }
-
- .cards-projetos {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
+   /* Textos que estavam com largura fixa */
+   .main-text h3 {
+     width: 100%;
+     padding: 0 15px;
+   }
 
 
+   /* Garante que os textos e ícones fiquem centralizados */
+   .number,
+   .text {
+     text-align: center;
+   }
 
- /* Footer responsivo */
+   /* Menu responsivo (pode ajustar como necessário) */
+   header {
+     height: auto;
+   }
 
- .footer-logo,
- .footer-col,
- .footer-col p,
- .footer-col h4 {
-   text-align: center;
-   justify-content: center;
-   align-items: center;
- }
+   .menu a {
+     font-size: 1rem;
+   }
 
- .container-footer {
-   flex-direction: column;
-   align-items: center;
- }
+   /* Títulos menores */
+   .main-text h1 {
+     font-size: 2rem;
+   }
 
- .footer-col ul {
-   padding-left: 0;
- }
+   .cards-projetos {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
 
- ul.menu {
-   display: none;
-   flex-direction: column;
-   width: 100%;
-   background-color: var(--cor-principal);
-   padding: 10px 0;
- }
 
- ul.menu.active {
-   display: flex;
- }
 
- .menu-toggle {
-   display: block;
-   font-size: 28px;
-   background: none;
-   border: none;
-   color: white;
-   margin-left: auto;
-   cursor: pointer;
- }
+   /* Footer responsivo */
 
- nav {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   gap: 10px;
-   padding: 10px;
- }
+   .footer-logo,
+   .footer-col,
+   .footer-col p,
+   .footer-col h4 {
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+   }
 
- .logo img {
-   width: 50px;
-   margin-bottom: 5px;
- }
+   .container-footer {
+     flex-direction: column;
+     align-items: center;
+   }
 
- /* Botão do menu hambúrguer */
- .menu-toggle {
-   display: block;
-   position: absolute;
-   top: 10px;
-   right: 1px;
-   font-size: 28px;
-   background: none;
-   border: none;
-   color: white;
-   z-index: 999;
- }
+   .footer-col ul {
+     padding-left: 0;
+   }
 
- .menu a {
-   display: block;
-   /* Faz o <a> ocupar toda a largura */
-   width: 100%;
-   /* Garante que o clique pegue tudo */
-   padding: 15px 20px;
-   /* Mais espaço para clique */
- }
+   ul.menu {
+     display: none;
+     flex-direction: column;
+     width: 100%;
+     background-color: var(--cor-principal);
+     padding: 10px 0;
+   }
 
- .menu a:hover {
-   font-size: 1.1rem;
- }
+   ul.menu.active {
+     display: flex;
+   }
 
- .menu li {
-   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-   /* visual separador */
- }
+   .menu-toggle {
+     display: block;
+     font-size: 28px;
+     background: none;
+     border: none;
+     color: white;
+     margin-left: auto;
+     cursor: pointer;
+   }
+
+   nav {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     gap: 10px;
+     padding: 10px;
+   }
+
+   .logo img {
+     width: 50px;
+     margin-bottom: 5px;
+   }
+
+   /* Botão do menu hambúrguer */
+   .menu-toggle {
+     display: block;
+     position: absolute;
+     top: 10px;
+     right: 1px;
+     font-size: 28px;
+     background: none;
+     border: none;
+     color: white;
+     z-index: 999;
+   }
+
+   .menu a {
+     display: block;
+     /* Faz o <a> ocupar toda a largura */
+     width: 100%;
+     /* Garante que o clique pegue tudo */
+     padding: 15px 20px;
+     /* Mais espaço para clique */
+   }
+
+   .menu a:hover {
+     font-size: 1.1rem;
+   }
+
+   .menu li {
+     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+     /* visual separador */
+   }
  }
