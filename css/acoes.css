@@ -463,6 +463,10 @@
      text-align: center;
    }
 
+   h3.number {
+     font-size: 1.5rem;
+   }
+
    /* Menu responsivo (pode ajustar como necessário) */
    header {
      height: auto;
@@ -487,6 +491,7 @@
      display: grid;
      grid-template-columns: repeat(2, 1fr);
      justify-content: center;
+     gap: 0;
    }
 
 
